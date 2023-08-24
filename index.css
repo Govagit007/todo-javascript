@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: linear-gradient(90deg, rgb(246, 240, 77), rgb(255, 133, 3));
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h1 {
+  color: rgb(248, 239, 228);
+  opacity: 1;
+}
+
+header,
+form {
+  margin: 30px;
+}
+
+.todo-input {
+  outline: none;
+  border: none;
+  width: 250px;
+  height: 30px;
+  border-radius: 4px;
+  color: rgb(255, 136, 9);
+}
+form {
+  position: relative;
+  width: 250px;
+  height: 30px;
+}
+
+.todo-add {
+  position: absolute;
+  color: rgb(255, 119, 0);
+  height: 100%;
+  transform: scale(1.4);
+
+  right: 0;
+  padding: 5px 5px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  transition: all 0.2s ease-in-out;
+}
+
+.todo-add:hover {
+  background-color: rgb(255, 230, 0);
+}
+.todo-container {
+  width: 30%;
+  position: relative;
+}
+
+.todo-list {
+  position: relative;
+  width: 15rem;
+}
+
+.todo {
+  color: rgb(255, 136, 0);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  height: 30px;
+  margin: 5px;
+  transition: all 0.6s ease;
+}
+
+.todo-n {
+  list-style: none;
+}
+
+.todo-n {
+  margin: 5px;
+  flex: 1;
+}
+
+.trash,
+.check-box {
+  height: 100%;
+  width: 15%;
+  border: none;
+  color: rgb(255, 255, 255);
+}
+.trash {
+  background-color: rgba(230, 37, 37, 0.882);
+}
+
+.check-box {
+  background-color: rgba(17, 179, 17, 0.742);
+}
+
+.check-box:hover {
+  background-color: rgba(13, 131, 13, 0.742);
+}
+.trash:hover {
+  background-color: rgb(180, 29, 29);
+}
+
+.fa-trash,
+.fa-regular {
+  pointer-events: none;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.2;
+}
+
+.fall {
+  transform: translateY(100px) rotateZ(45deg);
+  opacity: 0;
+}
